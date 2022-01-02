@@ -19,18 +19,18 @@ module.exports = {
         if (!betamount) {
             return message.lineReply('Enter a bet amount!')
         }
-        if (userBal >= 50000){
-            if (args[0].toLowerCase() === 'all'){
+        if (userBal >= 50000) {
+            if (args[0].toLowerCase() === 'all') {
                 betamount = 50000
             }
         }
-        if (isNaN(betamount)){
+        if (isNaN(betamount)) {
             return message.lineReply('Enter an **amount**.')
         }
         const a = await message.lineReply(`${flipping} |  You bet **$${commaNumber(betamount)}** and...`)
         const randomBool = Math.random() > 0.5 ? true : false;
         const winamt = betamount * 2;
-        if (randomBool === true){
+        if (randomBool === true) {
             setTimeout(() => {
                 a.edit(`${flipped} |  You bet **$${commaNumber(betamount)}** and...\nCongrats you won! c:\nYou now have **$${commaNumber(userBal + winamt)}**.`)
             }, 5000);

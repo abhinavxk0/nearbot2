@@ -1,3 +1,4 @@
+require('dotenv').config()
 const {
   mongoPath,
   bot_token,
@@ -313,4 +314,4 @@ mongoose
     console.log(chalk` - Successfully connected to {bold.cyan MongoDB}! -`)
   );
 
-client.login(bot_token);
+client.login(process.env.BOT_TOKEN);
