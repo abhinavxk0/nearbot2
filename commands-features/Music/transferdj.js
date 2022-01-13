@@ -7,6 +7,7 @@ module.exports = {
         const djUser = await db.fetch(`djuser.${message.guild.id}`)
         const mention = message.mentions.users.first();
         const queue = await client.distube.getQueue(message);
+        
 
         if (!queue){
             message.lineReply("I'm not playing any music right now.")
