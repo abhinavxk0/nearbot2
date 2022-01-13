@@ -6,8 +6,8 @@ module.exports = {
     async execute(client, message, args, Discord) {
         const djUser = await db.fetch(`djuser.${message.guild.id}`)
         const mention = message.mentions.users.first();
-        const queue = await client.distube.getQueue(message);
-        
+        const queue = client.distube.getQueue(message);
+
 
         if (!queue){
             message.lineReply("I'm not playing any music right now.")
@@ -17,7 +17,7 @@ module.exports = {
             message.lineReply("Error occured while trying to find the current DJ.")
             return
         }
-        if (!message.user.id === djUser){
+        if (!message.author.id === djUser){
             message.lineReply("You are not the currrent DJ.")
             return;
         }
