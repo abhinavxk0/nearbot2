@@ -55,6 +55,7 @@ module.exports = {
                             name: '__General Info__',
                             value: `**Name**: ${guild.name}
 **Guild ID**: ${guild.id}
+**Owner**: ${guild.owner}
 **Created**: ${guildCreated}, ${moment(guild.createdTimestamp).fromNow()}
 **Icon**: [Click Here](${guild.iconURL({ dynamic: true })})`,
                             inline: true,
