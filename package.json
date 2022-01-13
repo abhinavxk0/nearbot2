@@ -1,26 +1,21 @@
 {
-  "engines": {
-    "node": "16.13.0",
-    "npm": "8.1.3"
-  },
-  "name": "nearbot",
+  "name": "neer",
   "version": "1.0.0",
-  "description": "",
+  "description": "*** an amazing bot. 100% should add to your server.\\ \\ [`Invite NearBot`](https://tinyurl.com/nearbotx)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xavierk09/nearbot.git"
+    "url": "git+https://github.com/xavierk09/neer.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "ii",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xavierk09/nearbot/issues"
+    "url": "https://github.com/xavierk09/neer/issues"
   },
-  "homepage": "https://github.com/xavierk09/nearbot#readme",
+  "homepage": "https://github.com/xavierk09/neer#readme",
   "dependencies": {
     "@discordjs/opus": "^0.5.3",
     "@discordjs/voice": "^0.7.5",
@@ -48,6 +43,7 @@
     "got": "^11.8.3",
     "moment": "^2.29.1",
     "mongoose": "^5.13.13",
+    "ms": "^2.1.3",
     "node-fetch": "^2.6.1",
     "parse-ms": "^2.1.0",
     "pretty-ms": "^7.0.1",
